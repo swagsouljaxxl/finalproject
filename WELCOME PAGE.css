@@ -1,0 +1,25 @@
+.jumbotron.jumbotron-fluid {
+    background-color: #666;
+    margin-bottom: 0;
+}
+
+.jumbotron.jumbotron-fluid .container {
+    padding: 0;
+}
+
+.jumbotron.jumbotron-fluid h1.display-4 {
+    font-size: 3rem;
+}
+
+.jumbotron.jumbotron-fluid p.lead {
+    font-size: 1.75rem;
+}
+
+.jumbotron.jumbotron-fluid hr.my-4 {
+    border-top: 1px solid #eee;
+}
+
+.jumbotron.jumbotron-fluid .btn.btn-primary.btn-lg {
+    font-size: 1.25rem;
+    padding: 15px 30px;
+}

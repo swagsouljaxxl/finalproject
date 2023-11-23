@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="CONTACTS.css">
+    <script src="https://kit.fontawesome.com/20cee36f21.js" crossorigin="anonymous"></script>
+    <script defer src="CONTACTS.js"></script>
+</head>
+<body id="body" class="theme--dark">
+    <input type="checkbox" id="menu">
+    <input type="checkbox" id="night">
+    <div id="container">
+        <div class="header">
+            <label for="night" class="night-mode" onclick="enableNight()">
+                <i class="fa-solid fa-moon"></i>
+            </label>
+        </div>
+        <section class="left-section">
+            <img src="https://www.zdnet.com/a/img/resize/a0dcec40a8cd8d2e1b3a9e12a05c2819622d20be/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=1200&width=1200" alt="" class="profile-pic">
+            <div class="profile-details">
+                <span class="profile-maps">
+                    <i class="fa-solid fa-location-dot"></i> Astana. KZ
+                </span>
+                <p class="profile-name">Abdullah Ismail IT-2204</p>
+                <span class="profile-summary">Student, the creator of the site and future programmer</span>
+                <a href="HOME.html" class="profile-cv">Go back</a>
+            </div>
+            <div class="profile-pils">
+                <span class="pils"><a href="t.me/dripsouljah"><i class="fa-brands fa-telegram"></i> Telegram</a></span>
+                <span class="pils"><a href="https://github.com/swagsouljaxxl"><i class="fa-brands fa-github"></i> Github</a></span>
+                <span class="pils"><a href="www.instagram.com/ism_abdu/"><i class="fa-brands fa-instagram"></i> Instagram</a></span>
+                <span class="pils"><a href="https://www.linkedin.com/in/abdullah-ismailov-771368292/"><i class="fa-brands fa-linkedin"></i> Linkedin</a></span>
+            </div>
+        </section>
+        <div class="front-smooth"></div>
+    </div>
+    <script>
+        let enableNight = () => {
+            var body = document.getElementById("body");
+            if (body.classList.contains('theme--light')) {
+                body.classList.remove('theme--light');
+                body.classList.add('theme--dark');
+            } else {
+                body.classList.remove('theme--dark');
+                body.classList.add('theme--light');
+            }
+        }
+    </script>
+</body>
+</html>
